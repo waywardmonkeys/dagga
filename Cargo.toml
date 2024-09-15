@@ -14,7 +14,7 @@ description = "For scheduling directed acyclic graphs of nodes that create, read
 
 [features]
 default = ["dot"]
-dot = ["dot2"]
+dot = ["dep:dot2"]
 
 [dependencies]
 dot2 = { version = "^1.0", optional = true }
