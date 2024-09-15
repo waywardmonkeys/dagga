@@ -513,7 +513,7 @@ impl<N, E: Copy + PartialEq + Eq + std::hash::Hash> Node<N, E> {
             // this node results (creates) a resources that the other requires
             Some(false)
         } else if here_inputs.intersection(&other.results).count() > 0 {
-            // thes node requires a resource that the other results in (creates)
+            // this node requires a resource that the other results in (creates)
             Some(true)
         } else {
             None
